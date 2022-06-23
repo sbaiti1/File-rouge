@@ -1,0 +1,58 @@
+header{
+    padding: 0.5rem 5rem;
+   /* padding: 0.5rem 0rem;*/
+}
+
+p{
+    font-size: 1.3rem;
+    padding: 0 0.7rem;
+}
+img{
+    height: 100px;
+}
+
+main{
+    margin-bottom: 5rem;
+    min-height: 500px;
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+#clear{
+    outline: 0;
+    background-color: white;
+    border: #f87171 solid 2px;
+    border-radius: 12px;
+    color: #f87171;
+    padding:0.3rem 1rem;
+    font-size: 1.2rem;
+    float: right;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    margin-right: 22rem;
+   
+}
+
+#clear:hover{
+    color: white;
+    background: #f87171;
+}
+
+#trash{
+    font-size: 1.8rem;
+    position: relative;
+    top: -0.7rem;
+    cursor: pointer;
+}
+#trash:hover{
+    color: #f87171;
+}
+#total{
+    font-size: 1.6rem;
+    float: right;
+    margin-right: 20rem;
+    
+}

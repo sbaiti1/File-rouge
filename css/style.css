@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar{
+    padding: 1rem 5rem;
+    background: transparent;
+    
+}
+
+#brand{
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #525252;
+    
+}
+
+#signin{
+    background-color: #f87171;
+    outline: 0;
+    border-color: white;
+    border-radius: 50px;
+    color: white;
+    padding: 0.4rem 1.4rem;
+    font-weight: 600;
+
+}
+
+#navbarSupportedContent > ul > li:nth-child(n) > a{
+    color: #3f3f46;
+    font-size: 1rem;
+    padding: 0 0.9rem;
+
+}
+
+
+#navbarSupportedContent > ul > li:nth-child(n) > a:hover{
+    color:#f87171;
+}
+
+.intro .text{
+    height: 180px;
+    width: 600px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.715);
+    color: black;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+.intro span{
+    color: #f87171;
+}
+.icon:hover{
+    color: #f87171;
+    cursor: pointer;
+}
+
+/*main*/
+
+.intro{
+    background-image: url('../imgs/bg.jpg');
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.intro a{
+    text-decoration: none;
+    color: black;
+    border: black 2px solid;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.card{
+    border: 0;
+}
+
+.stars svg  {
+    color: orange;
+}
+
+
+.products .btn{
+    background-color: #f87171;
+    outline: 0;
+    border: 0;
+}
+
+.info p {
+    width: 80%;
+    font-size: 1.1rem;
+}
+
+.info img{
+    border-radius: 10px;
+    height: 50vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.info h2{
+    font-size: 2rem;
+    color: orange;
+}
+
+
+/*Newsletter*/
+#nl svg{
+    height: 2.5rem;
+    width: 2.5rem;
+    
+}
+
+#nl form input{
+    outline: 0;
+    border: 0;
+    text-align: center;
+    font-size: 1.1rem;
+    
+}
+
+#nl form button {
+    border: 2px solid #f87171 ;
+    outline: 0;
+    background: none;
+    padding: 5px;
+    border-radius: 10px;
+    color:  #f87171;
+    font-size: 1.1rem;
+}
+
+#packs img{
+    border-radius: 10px;
+    height: 50vh;
+}
+#packs h2{
+    color: #f87171;
+}
+
+.ads{
+    background-image: url('../imgs/prdcts2.jpg');
+    height: 50vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.ads h1{
+    
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+    letter-spacing: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+/*footer*/
+.brand{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+
+
+#footer ul.social li{
+	padding: 3px 0;
+}
+#footer ul.social li a i {
+    margin-right: 5px;
+	font-size:25px;
+	-webkit-transition: .5s all ease;
+	-moz-transition: .5s all ease;
+	transition: .5s all ease;
+}
+#footer ul.social li:hover a i {
+	font-size:30px;
+	margin-top:-10px;
+}
+#footer ul.social li a,
+#footer ul.quick-links li a{
+	color: #3f3f46;
+}
+#footer ul.social li a:hover{
+	color:#f87171;
+}
+#footer ul.quick-links li{
+	padding: 3px 0;
+	-webkit-transition: .5s all ease;
+	-moz-transition: .5s all ease;
+	transition: .5s all ease;
+}
+#footer ul.quick-links li:hover{
+	padding: 3px 0;
+	margin-left:5px;
+	font-weight:700;
+}
+#footer ul.quick-links li a i{
+	margin-right: 5px;
+}
+#footer ul.quick-links li:hover a i {
+    font-weight: 700;
+}
+
+footer ul{
+    list-style: none;
+}
+footer ul li a {
+    color: #525252;
+    text-decoration: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+    
+}
+footer ul li a:hover{
+    color: #f87171;
+}
+footer ul li{
+    padding: 8px 0;
+}

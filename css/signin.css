@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('../imgs/prdcts2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sign{
+    
+    height: 540px;   
+    width: 400px; 
+    
+    
+}
+
+h1{
+    color: #f87171;
+    letter-spacing: 3px;
+}
+form{
+    margin-top: 1rem;
+    padding: 25px;
+}
+ 
+input{
+    
+    width: 80%;
+}
+
+label{
+    color: #4b5563;
+}
+
+#submit{
+    outline: 0;
+    border: 0;
+    background: #f87171;
+    color: white;
+    border-radius: 30px;
+    padding:8px 30px;
+    font-size: 1.2rem;
+    
+}
+svg{
+    height: 1.5rem;
+    width: 1.5rem;
+    color: #1f2937
+    ;
+}
+.icons svg:hover{
+    cursor: pointer;
+    color: #f87171;
+    
+}
+.register a{
+    color: #f87171;
+}
+
+/*register page*/
+
+
