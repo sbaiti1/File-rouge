@@ -1,3 +1,9 @@
+<?php
+session_start();
+include "includes/functions.php"
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,10 +14,20 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="../public/css/cart.css">
+    <link rel="stylesheet" href="css/cart.css">
 </head>
 <body>
-    <div w3-include-html="header.html"></div>
+<?php 
+  if (isset($_SESSION["prenom"])) {
+    include "header.php";
+
+  }
+  else{
+    echo '<div w3-include-html="header.html"></div>';
+  }
+  
+  
+  ?>
 
     <main class="container mt-5">
         <h1 class="text-center">Your shopping cart</h1>
@@ -27,8 +43,8 @@
     
 
     <div w3-include-html="footer.html"></div>
-    <script src="../public/js/script.js"></script>
-    <script src="../public/js/cart.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/cart.js"></script>
     <script>
         includeHTML();
         </script>

@@ -1,0 +1,90 @@
+header{
+    padding: 0.5rem 5rem;
+   /* padding: 0.5rem 0rem;*/
+}
+
+.container {
+    margin-bottom: 10rem;
+    padding-bottom: 2rem;
+    margin-top: 5rem;
+}
+.pic img{
+    border-radius: 7px;
+}
+
+.prdct{
+    padding-left: 4rem;
+    padding-top: 3rem;
+}
+
+.prdct h1{
+    font-weight: bold;
+    
+}
+
+.prdct h2{
+    border-right: 2px solid rgba(0, 0, 0, 0.079);
+    
+    width: 19%;
+}
+.prdct .icons i{
+    color: orange;
+    font-size: 1.1rem;
+}
+
+.add{
+    margin-top: 1.5rem;
+    background: #f87171;
+    
+    border: #f87171 1px solid;
+    border-radius: 8px;
+    padding: 8px;
+    width: 60%;
+    color: white;
+    font-size: 1.3rem;
+    
+}
+
+.add i{
+    position: relative;
+    font-size: 5rem;
+    top:-5px;
+    
+    
+
+}
+.btns i{
+    font-size: 1.6rem;
+    padding-left: 3rem;
+    opacity: 0.7;
+    cursor: pointer;
+    
+}
+
+.check{
+    font-size: 1.1rem;
+}
+
+.check i{
+    color: #22c55e;
+    font-size: 2rem;
+    
+}
+
+.added{
+    background: transparent;
+    color: #f87171;
+    border: #f87171 1px solid;
+    margin-top: 1.5rem;
+    border-radius: 8px;
+    padding: 8px;
+    width: 60%;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.added i{
+    position: relative;
+    font-size: 1.5rem;
+    top:-5px;
+}

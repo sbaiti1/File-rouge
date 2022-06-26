@@ -14,7 +14,7 @@ let data = localStorage.getItem('cart');
 list_prdct = JSON.parse(data);
 
 
- if(page == 'cart.html'){
+ if(page == 'cart.php'){
     const list = document.getElementById('list');
     //create an object => product
     function add_prdct(prdct,price,img,id,trash){
@@ -25,7 +25,7 @@ list_prdct = JSON.parse(data);
     const text =
      `<li class="d-flex align-items-center justify-content-center mt-5" id="${id}">
     <div >
-    <img src="../public/imgs/${img}" height="100px" alt="">
+    <img src="imgs/${img}" height="100px" alt="">
     </div>
     <p class="text-center mx-3 py-4">${prdct}</p>
     <p class="mx-5 ">prix: ${price}$</p>
@@ -128,7 +128,7 @@ function removePrdct(elmnt){
 
 //code for huiles page
 
-else if (page == 'huiles.html') {
+else if (page == 'huiles.php') {
     /*function somme(price){
          total = total + price;
          return total;

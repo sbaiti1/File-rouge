@@ -1,3 +1,9 @@
+<?php
+session_start();
+include "includes/functions.php"
+
+?>
+
 <!DOCTYPE html>
 <html lang="en" id="html">
 <head>
@@ -15,8 +21,19 @@
     <title>Nos Huiles</title>
 </head>
 <body id="body">
+  
     
-    <div w3-include-html="header.html"></div>
+  <?php 
+  if (isset($_SESSION["prenom"])) {
+    include "header.php";
+
+  }
+  else{
+    echo '<div w3-include-html="header.html"></div>';
+  }
+  
+  
+  ?>
 
     <main class="">
             <h1 class="text-center mb-5  mt-4">Notre produits</h1>
@@ -49,7 +66,7 @@
                   </div>
                   
                   <h5>13£</h5>
-                   <a href="#" class="btn btn-primary mr-5">plus d'infos</a>
+                   <a href="product.html" class="btn btn-primary mr-5">plus d'infos</a>
                    
                    <i class="bi bi-cart-plus"></i>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
                 </div>
@@ -82,7 +99,7 @@
                 </div>
                 
                 <h5>10£</h5>
-                 <a href="#" class="btn btn-primary mr-5">plus d'infos</a>
+                 <a href="product.php" class="btn btn-primary mr-5">plus d'infos</a>
                  
                  <i class="bi bi-cart-plus"></i>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
               </div>
@@ -287,8 +304,8 @@
     <div w3-include-html="footer.html"></div>
 
 
-<script src="../public/js/script.js"></script>
-<script src="../public/js/cart.js"></script>
+<script src="js/script.js"></script>
+<script src="js/cart.js"></script>
 
 <script>
     includeHTML();

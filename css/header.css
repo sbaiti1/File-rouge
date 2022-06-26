@@ -7,13 +7,20 @@
     box-sizing: border-box;*/
     font-family: 'Poppins', sans-serif;
 }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
 header{
-    /*padding: 0.5rem 5rem;*/
-   /* padding: 0.5rem 0rem;*/
+    background-color: white;
 }
 
 .navbar{
-    padding: 1rem 5rem;
+    padding: 0.7rem 5rem;
     background: transparent;
 }
 
@@ -63,3 +70,26 @@ header{
     color: #f87171;
     cursor: pointer;
 }
+.icon a{
+    color: black;
+}
+.icon a:hover{
+    color: #f87171;
+    cursor: pointer;
+}
+
+
+
+
+/*user*/
+.profile1{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+   /* background-image: url('../imgs/brunnete.jpg');*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    
+ 
+ }

@@ -1,16 +1,10 @@
 <?php
+session_start();
+?>
 
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "FileRouge";
+<?php
 
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
-// Check connection
-if ($conn->connect_error) {
-  die("Connection failed: " . $conn->connect_error);
-}
+include "dbcon.php";
 
 if(isset($_POST["submit"])){
     
@@ -18,6 +12,10 @@ if(isset($_POST["submit"])){
     $prenom = $_POST["prenom"];
     $email = $_POST["email"];
     $pswd = $_POST["pswd"];
+
+    $_SESSION["prenom"] = $prenom ;
+    $_SESSION["nom"] =  $nom ;
+    $_SESSION["mail"] = $email ;
 
     require_once 'functions.php';
 
@@ -31,7 +29,7 @@ if(isset($_POST["submit"])){
       exit();
     }
 
-    createUser($conn,$nom,$prenom,$emai,$pswd);
+    createUser($conn,$nom,$prenom,$email,$pswd);
     
     header("location:../user.php");
 

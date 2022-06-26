@@ -1,0 +1,101 @@
+
+
+body{
+    background-color: 
+    #f9fafb
+;
+}
+img{
+   height: 150px;
+   width: 150px;
+   border-radius: 50%;
+   
+}
+.profile1{
+   height: 50px;
+   width: 50px;
+   border-radius: 50%;
+  /* background-image: url('../imgs/brunnete.jpg');*/
+   background-size: cover;
+   background-repeat: no-repeat;
+   
+
+}
+
+.profile{
+    height: 150px;
+   width: 150px;
+   border-radius: 50%;
+   /*background-image: url('../imgs/brunnete.jpg');*/
+   background-size: cover;
+   background-repeat: no-repeat;
+   
+
+}
+
+.pic{
+    background-color: white;
+    height: 450px;
+    width: 350px;
+}
+h4{
+    padding-left: 10px;
+}
+
+
+.info{
+    margin-left: 5rem;
+    background-color: white;
+    height: 180px;
+    width: 600px;
+}
+
+.infos{
+    margin-left: 5rem;
+    background-color: white;
+    height: 245px;
+    width: 600px;
+}
+
+.icons div{
+    text-align: center;
+    padding:0 2rem;
+    cursor: pointer;
+}
+
+.icons div i{
+    font-size: 1.5rem;
+    
+}
+.icons div label{
+    padding-top: 0.6rem;
+}
+
+.icons div i:hover{
+    color: #f87171;
+}
+
+a{
+    padding: 0 1.1rem;
+    color: black;
+    text-decoration: none;
+}
+
+#edit{
+    border: rgba(0, 0, 0, 0.233) 1.8px solid;
+    background: none;
+    padding: 5px;
+    border-radius: 10px;
+    
+
+}
+
+a:hover{
+    color: black;
+}
+
+#logout{
+    color: #f87171;
+    
+    
+}
