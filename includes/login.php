@@ -27,6 +27,7 @@ if (mysqli_num_rows($result) > 0) {
   // output data of each row
   while($row = mysqli_fetch_assoc($result)) {
    //echo "id: " . $row["id"]. " - Name: " . $row["firstname"]. " " . $row["lastname"]. "<br>";
+   $_SESSION["id"] = $row["id"] ;
     $_SESSION["prenom"] = $row["firstname"] ;
     $_SESSION["nom"] = $row["lastname"] ;
     $_SESSION["mail"] = $row["email"] ;

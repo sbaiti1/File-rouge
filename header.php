@@ -61,5 +61,13 @@
       </nav>
 </header>
 
+<script>
+  let host = window.location.host
+  document.getElementById('profile').addEventListener('click',()=>{
+    window.location.replace(`http://${host}/user.php`);
+  })
+</script>
+
+
 </body>
 </html>

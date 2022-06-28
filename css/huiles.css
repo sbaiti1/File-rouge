@@ -30,6 +30,11 @@ main{
     border: 0;
 }
 
+.products .btn:hover{
+    background-color: #f87171;
+    
+}
+
 
 
 
@@ -45,4 +50,8 @@ main a{
 
 main .container{
     margin-bottom: 5rem;
+}
+
+.card i:hover{
+    color: #f87171;
 }

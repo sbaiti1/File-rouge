@@ -1,8 +1,12 @@
+
+
 <?php
 session_start();
 include "includes/functions.php"
 
 ?>
+
+
 <?php include "header.php"?>
 
 <!DOCTYPE html>
@@ -20,7 +24,7 @@ include "includes/functions.php"
 <body>
 
 
- <div class="container d-flex">
+ <div class="container mt-2 d-flex">
    
    <div class="pic mt-5 py-5  shadow-sm p-3 mb-5 bg-body rounded">
    <div class="text-center">
@@ -31,7 +35,7 @@ include "includes/functions.php"
    <p> <?php echo $_SESSION["mail"]; ?></p>
   </div>
  <div class="btns mt-4 d-flex justify-content-center align-items-center">
- <a href="#" id="edit">modifier profile</a>
+ <a href="modifier.php" id="edit">modifier profile</a>
   <a href="includes/logout.php" id="logout">Se déconnecter</a>
  </div>
     
