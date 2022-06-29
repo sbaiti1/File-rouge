@@ -12,11 +12,14 @@ header{
 }
 
 main{
+    
     margin-bottom: 5rem;
+    
+    
 }
 
-.card{
-    border: none;
+main .products .card{
+    border: 0;
 }
 
 .stars svg  {
@@ -38,7 +41,7 @@ main{
 
 
 
- i{
+.card i{
      
         font-size: 2rem;
         cursor: pointer;
@@ -54,4 +57,43 @@ main .container{
 
 .card i:hover{
     color: #f87171;
+}
+
+
+.dropdown .btn{
+    font-size: 1.1rem;
+
+}
+
+.dropdown .btn:hover{
+    border-color: transparent;
+
+}
+.dropdown {
+    margin-bottom: 4rem;
+}
+
+
+
+.search input{
+    color: 
+    #374151;
+    border: 0;
+    outline: 0;
+    border-bottom: 2px solid rgba(42, 42, 42, 0.742);
+    width: 80%;
+    font-size: 1.2rem;
+    padding-left: 0.4rem;
+    padding-bottom: 0.1rem;
+    
+}
+.search i{
+    position: absolute;
+    left: 50%;
+    top: 12ex;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: #374151;
+    
 }

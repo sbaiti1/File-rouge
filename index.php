@@ -1,3 +1,9 @@
+<?php
+session_start();
+include "includes/functions.php"
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,7 +15,19 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
+<?php 
+  if (isset($_SESSION["prenom"])) {
+    include "header.php";
+
+  }
+  else{
+    echo '<div w3-include-html="header.html"></div>';
+  }
+  
+  
+  ?>
+  
+    <!--<header>
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
               <a class="navbar-brand" href="index.html" id="brand">bio & bien étre</a>
@@ -52,7 +70,7 @@
               </div>
             </div>
           </nav>
-    </header>
+    </header>-->
 
     <!--main-->
 
@@ -317,7 +335,12 @@
 
   </footer>
 
+  <script src="js/script.js"></script>
+<script src="js/cart.js"></script>
 
+<script>
+    includeHTML();
+    </script>
    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
    <script>
      AOS.init();
