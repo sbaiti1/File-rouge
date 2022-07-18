@@ -24,11 +24,11 @@ list_prdct = JSON.parse(data);
 
     const text =
      `<li class="d-flex align-items-center justify-content-center mt-5" id="${id}">
-    <div >
+    <div class="item" >
     <img src="imgs/${img}" height="100px" alt="">
     </div>
-    <p class="text-center mx-3 py-4">${prdct}</p>
-    <p class="mx-5 ">prix: ${price}$</p>
+    <p class="mx-3 py-4">${prdct}</p>
+    <p class="mx-5 ">prix: ${price}MAD</p>
     <div id="trash"><i class="bi bi-trash"></i></div> 
     </li>`;
 
@@ -160,6 +160,7 @@ else if (page == 'huiles.php') {
             trash:false
         })
         id++;
+        e.target.className = 'bi bi-cart-check';
         console.log(id);
         console.log(price);
         
@@ -173,8 +174,49 @@ else if (page == 'huiles.php') {
     
 }
 
+else if (page == 'product.php') {
+    console.log('hey');
+    if(!data){
+        list_prdct = [];
+        id = 0;
+        //total = 0 ;
+    }else if(data){
+        list_prdct = JSON.parse(data);
+        id = list_prdct.length;
+        console.log(id);
+
+    }
+    const add = document.getElementById('add');
+
+
+  //add prdct on click  
+    add.addEventListener('click',(e)=>{
+           let elmnt = e.target.parentNode.parentNode;
+            let prdct = elmnt.getElementsByTagName('h1')[0].innerText;
+            let price = parseInt( elmnt.getElementsByTagName('h2')[0].innerText.slice(0, -1));
+            let img = elmnt.parentNode.getElementsByTagName('img')[0].src.split("/").pop();
+          
+            list_prdct.push({
+            name : prdct,
+            img : img,
+            price : price,
+            id:id,
+            trash:false
+        })
+        id++;
+        console.log(id);
+        console.log(price);
+        
+        console.log(total);
+        console.log(list_prdct);
+        
+        localStorage.setItem("cart",JSON.stringify(list_prdct));
+    }
+    );
 
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
 
 
- 
+}
+
+

@@ -31,11 +31,17 @@ include "includes/functions.php"
 
     <main class="container mt-5">
         <h1 class="text-center">Your shopping cart</h1>
+        
+        <div class="container d-flex align-items-center justify-content-center">
         <ul class="" id="list">
             
-        </ul>
+            </ul>
+            
+        </div>
+
         
         <div id="total"></div>
+        </div>
         <div class="btns"><button id="clear">clear</button></div>
     </main>
 

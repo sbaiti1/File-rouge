@@ -3,18 +3,38 @@ header{
    /* padding: 0.5rem 0rem;*/
 }
 
+#list li{
+    width: 700px;
+}
+#list li p{
+    
+    width: calc(100% - 10px);
+    
+    
+    
+    text-align: center;
+    
+}
+
 p{
     font-size: 1.3rem;
     padding: 0 0.7rem;
+    
 }
 img{
     height: 100px;
+    
 }
 
 main{
     margin-bottom: 5rem;
     min-height: 500px;
 }
+
+.item i{
+    float: right;
+}
+
 footer{
     position: absolute;
     bottom: 0;

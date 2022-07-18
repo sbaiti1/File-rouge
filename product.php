@@ -33,13 +33,13 @@ include "includes/functions.php"
     
 
     <div class="container d-flex justify-content-center  ">
-      <div class="pic">
-        <img src="imgs/massage2.jpg" height="450px" alt="">
+      <div class="pic" id='pic'>
+      <img src="imgs/massage2.jpg" height="450px" alt="">
       </div>
       <div class="prdct">
-        <h1>Huille de massage</h1>
+        <h1 id='title'>Huille de massage</h1>
         <div class="d-flex align-items-center ">
-          <h2 class=" mt-3 px-1">120DH</h2>
+          <h2 class=" mt-3 px-1" id='price'>120</h2>
         <div class="icons px-4">
           <i class="bi bi-star-fill"></i>
           <i class="bi bi-star-fill"></i>
@@ -55,7 +55,7 @@ include "includes/functions.php"
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam ex aliquam blanditiis laborum nulla in laudantium, facere a reprehenderit molestiae Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, pariatur.</p>
         </div>
         <div class="btns">
-          <button class="add" id="add"><span>add to cart</span>  </button>
+          <button class="add" id="add">add to cart</button>
          <i class="bi bi-suit-heart" id="heart"></i>
         </div>
       </div>
@@ -68,10 +68,10 @@ include "includes/functions.php"
 
     <div w3-include-html="footer.html"></div>
 
-
+    <script src="js/prdct.js"></script>
   <script src="js/script.js"></script>
   <script src="js/cart.js"></script>
-  <script src="js/prdct.js"></script>
+  <script src="js/**.js"></script>
 
 <script>
     includeHTML();

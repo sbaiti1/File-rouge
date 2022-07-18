@@ -77,10 +77,12 @@ include "includes/functions.php"
    <div class="intro d-flex align-items-center justify-content-center ">
        <div class="text py-2"><h3 class="p-2 text-center">Découver notre <span>nouvelle</span> collection</h3>
     <h3 class="text-center"> des <span>promos</span> jusqu'a <span>-65%</span></h3>
-    <div class="link d-flex justify-content-center"><a href="">acheter maintenant</a></div>
+    <div class="link d-flex justify-content-center"><a href="" id="buy">acheter maintenant</a></div>
     </div>
    </div>
-   <div class="container mt-5 mb-5 pb-3">
+   <!-- sec into -->
+   <?php include "test.html" ?>
+   <!-- <div class="container mt-5 mb-5 pb-3">
        <h1 class="text-center mt-5">Notre top produits</h1>
         <div class="products d-flex justify-content-center mt-5 mb-5" data-aos="fadeInUp">
             <div class="card mx-3 shadow bg-body rounded" style="width: 18rem;">
@@ -231,7 +233,7 @@ include "includes/functions.php"
                 </div>
               </div>
         </div>
-   </div>
+   </div> -->
   <!--blog-->
    <div class="container py-5 mt-5 mb-5">
        
@@ -334,6 +336,10 @@ include "includes/functions.php"
     </div>
 
   </footer>
+
+  <script>
+    
+  </script>
 
   <script src="js/script.js"></script>
 <script src="js/cart.js"></script>
