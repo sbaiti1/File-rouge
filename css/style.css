@@ -50,17 +50,17 @@
     height: 180px;
     width: 600px;
     border-radius: 15px;
-    background: rgba(255, 255, 255, 0.715);
+    /* background: rgba(255, 255, 255, 0.715); */
     color: black;
     font-size: 1.5rem;
     text-transform: uppercase;
 
-    background: rgba( 255, 255, 255, 0.1 );
+     background: rgba(255, 255, 255, 0.053);
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 2px );
     -webkit-backdrop-filter: blur( 2px );
     border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border: 1px solid rgba( 255, 255, 255, 0.18 ); 
 }
 .intro span{
     color: #f87171;
@@ -88,7 +88,7 @@
     padding: 5px;
     border-radius: 10px;
 }
-.intro a:hover{
+.intro a{
     color: white;
     background-color: black;
 }

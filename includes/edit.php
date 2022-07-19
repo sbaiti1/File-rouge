@@ -2,9 +2,19 @@
 include "dbcon.php";
 session_start();
 $user_id = $_SESSION["id"];
+$email = $_SESSION["mail"];
+$pswd = $_SESSION["pswd"];
+
+if ($user_id){
+  
+  $sql = "SELECT * FROM USERS WHERE id = '$user_id' ";
+}
+else{
+  $sql = "SELECT * FROM USERS WHERE email='$email' AND pswd='$pswd' ";
 
 
-$sql = "SELECT * FROM USERS WHERE id='$user_id' ";
+}
+// $sql = "SELECT * FROM USERS WHERE email='$email' AND pswd='$pswd' ";
 $result = mysqli_query($conn, $sql);
 if (mysqli_num_rows($result) > 0) {
     // output data of each row

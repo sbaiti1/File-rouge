@@ -16,6 +16,9 @@ if(isset($_POST["submit"])){
     $_SESSION["prenom"] = $prenom ;
     $_SESSION["nom"] =  $nom ;
     $_SESSION["mail"] = $email ;
+    $_SESSION["pswd"] =  $pswd ;
+
+
 
     require_once 'functions.php';
 
@@ -30,6 +33,8 @@ if(isset($_POST["submit"])){
     }
 
     createUser($conn,$nom,$prenom,$email,$pswd);
+
+
     
     header("location:../user.php");
 
